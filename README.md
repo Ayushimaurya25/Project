@@ -1,2 +1,2 @@
 # Project
-This is project on online library management System
+This is demo project 
