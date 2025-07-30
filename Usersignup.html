@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>student dashboard</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+     <style>
+        body{
+            background-color: #f8f9fa;
+        }
+        .dashboard-header{
+            background: #fff;
+            padding: 15px;
+            border-bottom:2px solid #663399;
+        }
+        .card{
+            text-align: center;
+        }
+        .book-cover{
+            height: 150px;
+            object-fit: contain;
+        }
+        .logout-btn{
+          float: right;
+        }
+    
+     </style>
+
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand d-flex align-item-center"href="#">
+                <img src="Image/booklogo.webp" alt="booklogo" height="40px" width="40">
+                <span><strong>Online Library Management System</strong></span>
+                </a>
+                <div class="ms-auto">
+                   <a href="Homepage.html" class="btn btn-link">HOME</a>
+                </div>
+            </div>
+        </nav>
+
+    <!--Header-->
+
+    <div class="dashboard-header container-fluid">
+        <button class="btn btn-danger logout-btn">LOG ME OUT</button>
+        <h2>Students (User) Dashboard</h2>
+    </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand d-flex align-item-center"href="#"></a>
+                <div class="ms-auto">
+                   <a href="Usersignup.html" class="btn btn-link">DASHBOARD</a>
+                   <a href="Issuedbooks.html" class="btn btn-link">ISSUED BOOKS</a>
+                   <a href="#" class="btn btn-link">ACCOUNT</a>
+                </div>
+            </div>
+        </nav>
+
+
+    <!--Summary Cards-->
+    
+     <div class="container mt-4">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <h4>📚<br>12</h4>
+                    <p>Books Listed</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card p-3 shadow">
+                <h4>♻️<br>0</h4>
+                <p>Books not Returned Yet</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow">
+                    <h4>📕</h4><br>
+                    <P> Issued Books</P>
+              </div>
+            </div>
+        </div>
+     </div>
+
+     <!--Listed Books-->
+
+     <div class="container mt-5">
+        <h3>Listed Books</h3>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <!--BOOK CARD EXAMPLE-->
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/CSharp.jpeg"class="card-img-top book-cover" alt="C# Book">
+                <div class="card-body">
+                    <h5 class="card-title">C#</h5>
+                    <p class="card-text">Author: Mark J Price<br>
+                     ISBN: 223313<br>
+                     Quantity:10</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Dotnet.jpeg"class="card-img-top book-cover" alt="Dotnet Book">
+                <div class="card-body">
+                    <h5 class="card-title">Dotnet</h5>
+                    <p class="card-text">Author: R Shivkumar<br>
+                     ISBN: 233414<br>
+                     Quantity: 15</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Php.jpeg"class="card-img-top book-cover" alt="Php & MySql Book">
+                <div class="card-body">
+                    <h5 class="card-title">Php & MySql</h5>
+                    <p class="card-text">Author: W. Jason Glimore<br>
+                     ISBN: 243515<br>
+                     Quantity:10</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Java.jpg"class="card-img-top book-cover" alt="JavaBook">
+                <div class="card-body">
+                    <h5 class="card-title">Java</h5>
+                    <p class="card-text">Author: E Balagurusamy<br>
+                     ISBN: 253616<br>
+                     Quantity: 12</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Python.jpeg"class="card-img-top book-cover" alt="Python Book">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">Author: Dr. S.P.Ponnusamy <br>Dr. S. Gokila<br>
+                     ISBN: 263717<br>
+                     Quantity: 10</p>
+                </div>
+             </div>
+              </div>
+
+
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Asp.jpg"class="card-img-top book-cover" alt=" Asp Dotnet Book">
+                <div class="card-body">
+                    <h5 class="card-title">Asp Dotnet</h5>
+                    <p class="card-text">Author: Ramesh Bangia<br>
+                     ISBN: 273818<br>
+                     Quantity: 11</p>
+                </div>
+             </div>
+              </div>
+
+
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/AI.jpeg"class="card-img-top book-cover" alt="AI Machine Learning Book">
+                <div class="card-body">
+                    <h5 class="card-title">AI Machine Learning</h5>
+                    <p class="card-text">Author: Anmol Mahajan<br>
+                     ISBN: 283919<br>
+                     Quantity: 10</p>
+                </div>
+             </div>
+              </div>
+
+             <div class="col">
+             <div class="card h-100">
+                <img src="Image/Relative.jpg"class="card-img-top book-cover" alt="Relativity Theory Book">
+                <div class="card-body">
+                    <h5 class="card-title">Relativity Theory</h5>
+                    <p class="card-text">Author: Alebert Eistein<br>
+                     ISBN: 203110<br>
+                     Quantity: 10</p>
+                </div>
+             </div>
+              </div>
+              
+            <div class="col">
+             <div class="card h-100">
+                <img src="Image/Atomic.jpg"class="card-img-top book-cover" alt="Atomic Book">
+                <div class="card-body">
+                    <h5 class="card-title">Atomic theory</h5>
+                    <p class="card-text">Author: John Allen<br>
+                     ISBN: 213211<br>
+                     Quantity: 12</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/DSA.jpg"class="card-img-top book-cover" alt="DSA Book">
+                <div class="card-body">
+                    <h5 class="card-title">DSA</h5>
+                    <p class="card-text">Author: R.S. Salaria<br>
+                     ISBN: 263313<br>
+                     Quantity: 10</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Os.jpeg"class="card-img-top book-cover" alt="Operating System Book">
+                <div class="card-body">
+                    <h5 class="card-title">Operating System</h5>
+                    <p class="card-text">Author: Anurag Gupta<br>
+                     ISBN: 223313<br>
+                     Quantity: 10</p>
+                </div>
+             </div>
+              </div>
+
+              <div class="col">
+             <div class="card h-100">
+                <img src="Image/Web Technology.jpg"class="card-img-top book-cover" alt="Web Technology Book">
+                <div class="card-body">
+                    <h5 class="card-title">Web Technology</h5>
+                    <p class="card-text">Author: N.P.Gopalan<br>
+                     ISBN: 443313<br>
+                     Quantity: 10</p>
+                </div>
+             </div>
+              </div>
+
+        </div>
+     </div> 
+
+     <script>
+    
+     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
